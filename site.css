@@ -1,8 +1,12 @@
+/* Common practice to ensure consistency in the spacing between elements across different browsers */
 * {
     margin: 0;
 }
 
-html, body {
+/* HTML height common practice: ensures that the content on the page is displayed within the viewport,
+and user's don't have to scroll unnecessarily */
+html,
+body {
     height: 100%;
 }
 
@@ -15,6 +19,7 @@ p {
     margin: 0.5em 0 0.5em 0;
 }
 
+/* makes the header/nav list fixed at the top-left corner */
 header {
     display: block;
     position: fixed;
