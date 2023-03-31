@@ -1,3 +1,4 @@
+/* mobile style first */
 /* Common practice to ensure consistency in the spacing between elements across different browsers */
 * {
     margin: 0;
@@ -28,4 +29,63 @@ header {
     width: 100%;
     background-color: #a493c0;
     padding: 10px;
+}
+
+/* keeps the colour after a link is visited */
+nav a:visited,
+nav a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav>ul {
+    display: inline;
+    padding: 0;
+}
+
+/* Target the list items to display inline, but use inline-block to still have control over margin*/
+nav>ul>li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px 0 5px;
+}
+
+/* min-height needed for the footer nav to show up at the bottom of the page  */
+main {
+    display: block;
+    background-image: url("images/background.png");
+    padding-top: 3em;
+    padding-bottom: 3em;
+    min-height: 85%;
+}
+
+footer {
+    padding: 15px;
+}
+
+/* em units used so it can scale with the size of the browser based of the font size*/
+aside,
+article {
+    padding: 2em;
+}
+
+aside {
+    text-align: center;
+}
+
+article {
+    width: 75%;
+}
+
+/* style to be used on screens 768px or wider*/
+@media only screen and (min-width: 768px) {
+
+    /* two column layout*/
+    main {
+        display: flex;
+    }
+
+    aside {
+        margin-left: 2%;
+    }
 }
